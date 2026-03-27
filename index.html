@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Романова Ольга — AI Content Creator & Visual Artist</title>
-  <meta name="description" content="AI content creator и visual artist. Создаю визуальный контент для брендов с помощью Generative AI: фотосессии, видео, product visuals, кампейны.">
+  <meta name="description" content="AI content creator и visual artist. Создаю визуальный контент для брендов с помощью Generative AI.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400;75..125,500;75..125,700&family=Archivo+Narrow:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,75..125,400;0,75..125,500;0,75..125,700;1,75..125,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -18,455 +18,530 @@
       <a href="#" class="nav__logo">Романова Ольга</a>
       <ul class="nav__links">
         <li><a href="#skills">Навыки</a></li>
-        <li><a href="#services">Направления</a></li>
+        <li><a href="#directions">Направления</a></li>
         <li><a href="#process">Процесс</a></li>
         <li><a href="#portfolio">Портфолио</a></li>
         <li><a href="#contact">Контакт</a></li>
       </ul>
       <button class="nav__burger" id="burger" aria-label="Menu">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
-
-  <!-- Mobile nav -->
   <div class="nav__mobile" id="mobileNav">
     <a href="#skills">Навыки</a>
-    <a href="#services">Направления</a>
+    <a href="#directions">Направления</a>
     <a href="#process">Процесс</a>
     <a href="#portfolio">Портфолио</a>
     <a href="#contact">Контакт</a>
   </div>
 
-  <!-- HERO -->
+  <!-- ============================================================ -->
+  <!-- HERO — как в home.pdf: полноэкранное фото, текст поверх снизу -->
+  <!-- ============================================================ -->
   <section class="hero">
-    <div class="container">
-      <div class="hero__grid">
-        <div class="hero__text fade-in">
-          <h1 class="hero__title">
-            AI content creator /
-            AI visual artist
-            <span>Романова Ольга</span>
-          </h1>
-          <p class="hero__subtitle">
-            Создаю визуальный контент для брендов с помощью генеративного AI — от концепции до финального результата.
-          </p>
-        </div>
-        <div class="hero__image fade-in">
-          <img src="assets/img/home_hero.jpeg" alt="AI generated visual" loading="eager">
-        </div>
-      </div>
+    <div class="hero__bg">
+      <img src="assets/img/home_dir1.jpeg" alt="AI visual" loading="eager">
+    </div>
+    <div class="hero__overlay">
+      <h1 class="hero__title">AI content creator /<br>AI visual artist /</h1>
+      <div class="hero__name">Романова Ольга</div>
     </div>
   </section>
 
-  <!-- SKILLS -->
+  <!-- ============================================================ -->
+  <!-- SKILLS — как в home.pdf: фото слева, списки справа            -->
+  <!-- ============================================================ -->
   <section class="skills" id="skills">
     <div class="container">
-      <div class="skills__grid fade-in">
-        <div class="skills__col">
-          <h3>Generative AI</h3>
-          <ul>
-            <li>Midjourney</li>
-            <li>Kling AI</li>
-            <li>Nano Banana</li>
-            <li>Higgsfield AI</li>
-            <li>Veo</li>
-            <li>Suno</li>
-          </ul>
+      <div class="skills__row fade-in">
+        <div class="skills__image">
+          <img src="assets/img/home_skills.jpeg" alt="AI generated visual" loading="lazy">
         </div>
-        <div class="skills__col">
-          <h3>Дополнительно</h3>
-          <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Figma</li>
-            <li>CapCut</li>
-          </ul>
+        <div class="skills__info">
+          <div class="skills__block">
+            <h3>Основные Generative AI:</h3>
+            <p>Midjourney, Kling AI, Nano Banana, Higgsfield AI, Veo, Suno</p>
+          </div>
+          <div class="skills__block">
+            <h3>Дополнительное ПО:</h3>
+            <p>Adobe Photoshop, Adobe Illustrator, Figma, CapCut</p>
+          </div>
         </div>
-        <div class="skills__col">
-          <h3>Направления</h3>
-          <ul>
-            <li>Фотосессии</li>
-            <li>Видео</li>
-            <li>Product visuals</li>
-            <li>Кампейны</li>
-            <li>Контент для соц сетей</li>
-            <li>Модели и амбассадоры</li>
-          </ul>
-        </div>
-      </div>
-      <div class="skills__images fade-in">
-        <img src="assets/img/home_dir1.jpeg" alt="AI fashion visual" loading="lazy">
-        <img src="assets/img/home_skills.jpeg" alt="AI generated model" loading="lazy">
-        <img src="assets/img/home_dir3.jpeg" alt="AI portrait" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services" id="services">
+  <!-- ============================================================ -->
+  <!-- DIRECTIONS — как в home.pdf: 3 фото + список направлений      -->
+  <!-- ============================================================ -->
+  <section class="directions" id="directions">
     <div class="container">
-      <div class="services__header fade-in">
-        <h2 class="t-heading">Направления в AI<br>для брендов</h2>
+      <div class="directions__images fade-in">
+        <img src="assets/img/home_dir2.jpeg" alt="AI fashion" loading="lazy">
+        <img src="assets/img/home_dir3.jpeg" alt="AI visual" loading="lazy">
+        <img src="assets/img/home_hero.jpeg" alt="AI portrait" loading="lazy">
       </div>
-      <div class="services__list fade-in">
-        <div class="services__item">
-          <div class="services__item-num">01</div>
-          <h3>Фотосессии</h3>
-          <p>AI-генерация визуалов на основе ДНК бренда, мудбордов и референсов</p>
-        </div>
-        <div class="services__item">
-          <div class="services__item-num">02</div>
-          <h3>Видео</h3>
-          <p>Создание видеоконтента с помощью AI-инструментов для соц сетей и рекламы</p>
-        </div>
-        <div class="services__item">
-          <div class="services__item-num">03</div>
-          <h3>Product visuals</h3>
-          <p>Продуктовые визуалы премиум-качества для каталогов и рекламных кампаний</p>
-        </div>
-        <div class="services__item">
-          <div class="services__item-num">04</div>
-          <h3>Кампейны</h3>
-          <p>Полный визуальный ряд для рекламных кампаний бренда</p>
-        </div>
-        <div class="services__item">
-          <div class="services__item-num">05</div>
-          <h3>Контент для соц сетей</h3>
-          <p>Стилизованный контент для Instagram, Telegram и других платформ</p>
-        </div>
-        <div class="services__item">
-          <div class="services__item-num">06</div>
-          <h3>Модели и амбассадоры</h3>
-          <p>AI-генерация моделей и образов для бренда</p>
-        </div>
+      <div class="directions__content fade-in">
+        <h2>Направления в AI для брендов:</h2>
+        <ul class="directions__list">
+          <li>фотосессии</li>
+          <li>видео</li>
+          <li>product visuals</li>
+          <li>кампейны</li>
+          <li>контент для соц сетей</li>
+          <li>модели и амбассадоры</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- ============================================================ -->
+  <!-- PROCESS — как в home.pdf: шаги вертикально, фото + текст      -->
+  <!-- ============================================================ -->
   <section class="process" id="process">
     <div class="container">
-      <h2 class="t-heading fade-in">Подход и этапы работы</h2>
-      <div class="process__steps fade-in">
-        <div class="process__step">
-          <div class="process__step-num">01</div>
-          <h4>Анализ</h4>
-          <p>Изучение ЦА, текущих задач маркетинга, ДНК бренда</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">02</div>
-          <h4>Концепция</h4>
-          <p>Поиск референсов, подготовка мудбордов, согласование идей</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">03</div>
-          <h4>Визуальный язык</h4>
-          <p>Переработка референсов под ДНК бренда, дополнение визуала деталями и хуками</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">04</div>
-          <h4>Ключевые кадры</h4>
-          <p>Раскадровки, опорные кадры серии</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">05</div>
-          <h4>Серийность</h4>
-          <p>Новые ракурсы и позы, кадры для визуального разнообразия и динамики</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">06</div>
-          <h4>Постобработка</h4>
-          <p>Отбор кадров для публикации, обработка в Photoshop, монтаж</p>
-        </div>
-        <div class="process__step">
-          <div class="process__step-num">07</div>
-          <h4>Результат</h4>
-          <p>Единство стиля, идеи и озвучки, подчеркивающее ДНК бренда</p>
+      <h2 class="process__title fade-in">подход и этапы работы</h2>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step1.jpeg" alt="Анализ" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>анализ</h3>
+          <p>изучение ЦА, текущих задач маркетинга, ДНК бренда</p>
         </div>
       </div>
-      <div class="process__images fade-in">
-        <img src="assets/img/home_step1.jpeg" alt="Process step" loading="lazy">
-        <img src="assets/img/home_step4.jpeg" alt="Process step" loading="lazy">
-        <img src="assets/img/home_step6.jpeg" alt="Process step" loading="lazy">
-        <img src="assets/img/home_step8.jpeg" alt="Process step" loading="lazy">
-        <img src="assets/img/home_step10.jpeg" alt="Process step" loading="lazy">
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step2.jpeg" alt="Концепция" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>концепция</h3>
+          <p>поиск референсов, подготовка мудбордов, музыки, согласование идей</p>
+        </div>
+      </div>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step4.jpeg" alt="Визуальный язык" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>визуальный язык</h3>
+          <p>переработка референсов под ДНК бренда, дополнение визуала деталями и хуками</p>
+        </div>
+      </div>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step6.jpeg" alt="Ключевые кадры" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>ключевые кадры</h3>
+          <p>раскадровки, опорные кадры серии</p>
+        </div>
+      </div>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step8.jpeg" alt="Серийность" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>серийность</h3>
+          <p>новые ракурсы и позы, кадры для визуального разнообразия и динамики</p>
+        </div>
+      </div>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step9.jpeg" alt="Постобработка" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>постобработка</h3>
+          <p>отбор кадров для публикации, обработка в PS, монтаж</p>
+        </div>
+      </div>
+
+      <div class="process__step fade-in">
+        <div class="process__step-img"><img src="assets/img/home_step10.jpeg" alt="Результат" loading="lazy"></div>
+        <div class="process__step-text">
+          <h3>результат</h3>
+          <p>единство стиля, идеи и озвучки, подчеркивающее ДНК бренда</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- PORTFOLIO -->
+  <!-- ============================================================ -->
+  <!-- PORTFOLIO                                                     -->
+  <!-- ============================================================ -->
   <div id="portfolio">
 
-    <!-- CASE: Madison Hill -->
+    <!-- ========== MADISON HILL ========== -->
     <section class="case">
       <div class="container">
-        <div class="case__header fade-in">
-          <h2 class="case__brand">Madison Hill</h2>
-          <div class="case__type">ИИ контент для бренда</div>
+        <!-- Шапка как в portfolio.pdf -->
+        <div class="case__top fade-in">
+          <div class="case__top-left">Романова Ольга</div>
+          <div class="case__top-right">ИИ контент для</div>
         </div>
-        <p class="case__desc fade-in">
-          Бренд создаёт базовую одежду простого кроя, вдохновлять стритстайл эстетикой, smart casual и трендами.
-          Минималистичность и чистота кроя делает вещи уместными в разных ситуациях и позволяет экспериментировать со стилизацией.
-        </p>
-
-        <div class="case__section-title fade-in">Анализ бренда</div>
-        <div class="gallery gallery--4 gallery--tall fade-in">
-          <img src="assets/img/mh_brand1.jpeg" alt="Madison Hill - рубашка" loading="lazy">
-          <img src="assets/img/mh_brand2.jpeg" alt="Madison Hill - свитшот" loading="lazy">
-          <img src="assets/img/mh_brand3.jpeg" alt="Madison Hill - шорты" loading="lazy">
-          <img src="assets/img/mh_brand4.jpeg" alt="Madison Hill - штаны" loading="lazy">
+        <h2 class="case__brand fade-in">Madison Hill</h2>
+        <div class="case__toc fade-in">
+          <span>анализ бренда</span>
+          <span>ugc\ карточки товара</span>
+          <span>модели</span>
+          <span>пример видео</span>
         </div>
 
-        <div class="analysis fade-in">
-          <div class="analysis__text">
-            <h4>У бренда:</h4>
-            <ul>
-              <li>черно-белая палитра</li>
-              <li>минимализм</li>
-              <li>текстура</li>
-              <li>иногда городская среда</li>
-            </ul>
-            <h4>Что добавила:</h4>
-            <ul>
-              <li>более "тьюмерский" типаж модели</li>
-              <li>стильную стрижку</li>
-              <li>меньше ретуши кожи</li>
-              <li>смелую стилизацию</li>
-              <li>стиль UGC контента</li>
-              <li>реальный контекст</li>
-            </ul>
+        <!-- Анализ бренда — продукты -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill</div>
+            <div class="case__section-type">анализ бренда</div>
           </div>
-          <div class="analysis__image">
-            <img src="assets/img/mh_brand5.jpeg" alt="Madison Hill - анализ" loading="lazy">
+          <div class="analysis">
+            <div class="gallery gallery--2 gallery--tall">
+              <img src="assets/img/mh_brand1.jpeg" alt="Рубашка" loading="lazy">
+              <img src="assets/img/mh_brand2.jpeg" alt="Свитшот oversize" loading="lazy">
+              <img src="assets/img/mh_brand3.jpeg" alt="Шорты летние" loading="lazy">
+              <img src="assets/img/mh_brand4.jpeg" alt="Штаны багги" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>Бренд создаёт базовую одежду простого кроя, вдохновлять стритстайл эстетикой, smart casual и трендами.</p>
+              <br>
+              <p>Минималистичность и чистота кроя делает вещи уместными в разных ситуациях и позволяет экспериментировать со стилизацией.</p>
+            </div>
           </div>
         </div>
 
-        <div class="case__section-title fade-in">Визуал &mdash; UGC контент</div>
-        <div class="gallery gallery--3 gallery--tall fade-in">
-          <img src="assets/img/mh_ugc2.jpeg" alt="Madison Hill UGC" loading="lazy">
-          <img src="assets/img/mh_ugc3.jpeg" alt="Madison Hill UGC" loading="lazy">
-          <img src="assets/img/mh_ugc4.jpeg" alt="Madison Hill UGC" loading="lazy">
+        <!-- Анализ бренда — что добавила -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill</div>
+            <div class="case__section-type">анализ бренда</div>
+          </div>
+          <div class="analysis">
+            <div class="gallery gallery--2 gallery--medium">
+              <img src="assets/img/mh_brand5.jpeg" alt="Модель" loading="lazy">
+              <img src="assets/img/mh_brand6.jpeg" alt="Модель в кафе" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <h4>У бренда:</h4>
+              <ul>
+                <li>черно-белая палитра</li>
+                <li>минимализм</li>
+                <li>текстура</li>
+                <li>иногда городская среда</li>
+              </ul>
+              <h4>Что добавила:</h4>
+              <ul>
+                <li>более "зумерский" типаж модели</li>
+                <li>стильную стрижку</li>
+                <li>меньше ретуши кожи</li>
+                <li>смелую стилизацию</li>
+                <li>стиль UGC контента</li>
+                <li>реальный контекст</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
-        <div class="case__section-title fade-in">Варианты моделей и стилей</div>
-        <div class="gallery gallery--3 gallery--medium fade-in">
-          <img src="assets/img/mh_models1.jpeg" alt="Madison Hill модели" loading="lazy">
-          <img src="assets/img/mh_models3.jpeg" alt="Madison Hill модели" loading="lazy">
-          <img src="assets/img/mh_analysis.jpeg" alt="Madison Hill стили" loading="lazy">
+        <!-- Визуал — UGC контент (2 ряда по 3) -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill - визуал</div>
+            <div class="case__section-type">UGC контент</div>
+          </div>
+          <div class="gallery gallery--3 gallery--tall">
+            <img src="assets/img/mh_ugc2.jpeg" alt="UGC" loading="lazy">
+            <img src="assets/img/mh_ugc3.jpeg" alt="UGC" loading="lazy">
+            <img src="assets/img/mh_ugc4.jpeg" alt="UGC" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Варианты моделей и стилей -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill</div>
+            <div class="case__section-type">варианты моделей и стилей</div>
+          </div>
+          <div class="gallery gallery--3 gallery--tall">
+            <img src="assets/img/mh_models1.jpeg" alt="Модель" loading="lazy">
+            <img src="assets/img/mh_models3.jpeg" alt="Модель" loading="lazy">
+            <img src="assets/img/mh_analysis.jpeg" alt="Модель" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Анализ бренда — соц сети -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill</div>
+            <div class="case__section-type">анализ бренда</div>
+          </div>
+          <div class="analysis">
+            <div class="analysis__image">
+              <img src="assets/img/mh_insta.jpeg" alt="Instagram бренда" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>Если отталкиваться от брендинга в соц сетях, то основной акцент смещается на приемы.</p>
+              <br>
+              <h4>Основные визуальные приемы:</h4>
+              <ul>
+                <li>сложный оттенок бордового</li>
+                <li>пониженная экспозиция</li>
+                <li>теплое освещение</li>
+                <li>конвенционально красивые модели</li>
+                <li>сеттинг элитного университета</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Итог анализа -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">Madison Hill</div>
+            <div class="case__section-type">итог анализа</div>
+          </div>
+          <div class="analysis">
+            <div class="analysis__text">
+              <p>Интерьер совмещает в себе классические элементы, поддерживающие университетскую эстетику, и предметы, которые делают пространство обжитым, и узнаваемым для ЦА.</p>
+              <br>
+              <p>Внешность модели поддерживает ту же идею: за основу взяты "идеальные" модели, но типаж смягчен для реалистичности и соотносимости с ЦА (relatable).</p>
+              <br>
+              <p>Колорит построен вокруг цвета бренда. Источник теплого света поддерживает цвет бренда и классический стиль.</p>
+            </div>
+            <div class="analysis__image">
+              <img src="assets/img/mh_video1.jpeg" alt="Итог анализа" loading="lazy">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CASE: Crystalized -->
+    <!-- ========== CRYSTALIZED ========== -->
     <section class="case">
       <div class="container">
-        <div class="case__header fade-in">
-          <h2 class="case__brand">Crystalized</h2>
-          <div class="case__type">AI фотосессия на основе каталога бренда</div>
-        </div>
-        <p class="case__desc fade-in">
-          Выражение ДНК бренда через визуальные метафоры и стиль изображений.
-          Задача — переосмыслить каталожную съёмку с помощью AI.
-          Результат — цельная визуальная история, основанная на позиционировании бренда.
-        </p>
-
-        <div class="analysis fade-in">
-          <div class="analysis__image">
-            <img src="assets/img/cr_hero.jpeg" alt="Crystalized hero" loading="lazy">
-          </div>
-          <div class="analysis__text">
-            <h4>Концепция</h4>
-            <p>
-              Концепция представляет собой гармоничное сочетание элементов классической и современной готики.
-              Вдохновение черпается из природных явлений, эклектики ретрофутуризма, разных эпох, мрачной архитектуры,
-              что отражается в текстурах и формах, создавая уникальные образы, подчеркивающие красоту человеческого тела.
-            </p>
-          </div>
+        <div class="case__top fade-in">
+          <div class="case__section-brand">crystalized</div>
+          <div class="case__section-type">ai фотосессия на основе каталога бренда</div>
         </div>
 
-        <div class="case__section-title fade-in">Итог анализа</div>
-        <div class="analysis fade-in">
+        <div class="analysis fade-in" style="margin-top: 32px;">
           <div class="analysis__image">
-            <img src="assets/img/cr_visual2.jpeg" alt="Crystalized анализ" loading="lazy">
+            <img src="assets/img/cr_hero.jpeg" alt="Crystalized" loading="lazy">
           </div>
           <div class="analysis__text">
-            <p>
-              Бренд вдохновлен эстетикой средневековья, отсюда готический собор и элементы рыцарских доспехов.
-              Необычная прическа является визуальным хуком и метафорой шлема современной девушки.
-            </p>
+            <p>Выражение ДНК бренда через визуальные метафоры и стиль изображений.</p>
             <br>
-            <p>
-              Актуальность интерпретации выражается стилем фотографий, ракурсами и смелым кадрированием.
-              Постановка света основана на эстетике 2000-х годов — актуального тренда и части ДНК бренда.
-            </p>
+            <p>Задача — переосмыслить каталожную съёмку с помощью AI.</p>
+            <br>
+            <p>Результат — цельная визуальная история, основанная на позиционировании бренда.</p>
+            <br>
+            <p style="color: #888; font-size: 0.8125rem;">https://crystalized.ru/</p>
           </div>
         </div>
 
-        <div class="case__section-title fade-in">Результат</div>
-        <div class="gallery gallery--3 gallery--tall fade-in">
-          <img src="assets/img/cr_result2.jpeg" alt="Crystalized result" loading="lazy">
-          <img src="assets/img/cr_result3.jpeg" alt="Crystalized result" loading="lazy">
-          <img src="assets/img/cr_result5.jpeg" alt="Crystalized result" loading="lazy">
+        <!-- Анализ бренда -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">crystalized - анализ</div>
+            <div class="case__section-type">анализ бренда</div>
+          </div>
+          <div class="analysis">
+            <div class="analysis__image">
+              <img src="assets/img/cr_concept.jpeg" alt="Мудборд" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>"Концепция представляет собой гармоничное сочетание элементов классической и современной готики.</p>
+              <br>
+              <p>Вдохновение черпается из природных явлений, эклектики ретрофутуризма, разных эпох, мрачной архитектуры, что отражается в текстурах и формах, создавая уникальные образы, подчеркивающие красоту человеческого тела."</p>
+            </div>
+          </div>
         </div>
-        <div style="height: 4px"></div>
-        <div class="gallery gallery--2 gallery--tall fade-in">
-          <img src="assets/img/cr_result1.jpeg" alt="Crystalized result" loading="lazy">
-          <img src="assets/img/cr_result4.jpeg" alt="Crystalized result" loading="lazy">
+
+        <!-- Концепция — итог анализа -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">crystalized - концепция</div>
+            <div class="case__section-type">итог анализа</div>
+          </div>
+          <div class="analysis">
+            <div class="analysis__image">
+              <img src="assets/img/cr_visual2.jpeg" alt="Концепция" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>Бренд вдохновлен эстетикой средневековья, отсюда готический собор и элементы рыцарских доспехов. Необычная прическа является визуальным хуком и метафорой шлема современной девушки.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Визуал — итог анализа -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">crystalized - визуал</div>
+            <div class="case__section-type">итог анализа</div>
+          </div>
+          <div class="analysis">
+            <div class="analysis__image">
+              <img src="assets/img/cr_visual1.jpeg" alt="Визуал" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>Актуальность интерпретации выражается стилем фотографий, ракурсами и смелым кадрированием. Постановка света основана на эстетике 2000-х годов — актуального тренда и части ДНК бренда.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Результат -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">crystalized - визуал</div>
+            <div class="case__section-type">результат</div>
+          </div>
+          <div class="gallery gallery--3 gallery--tall">
+            <img src="assets/img/cr_result2.jpeg" alt="Crystalized" loading="lazy">
+            <img src="assets/img/cr_result3.jpeg" alt="Crystalized" loading="lazy">
+            <img src="assets/img/cr_result5.jpeg" alt="Crystalized" loading="lazy">
+          </div>
+          <div style="height: 4px"></div>
+          <div class="gallery gallery--2 gallery--tall">
+            <img src="assets/img/cr_result1.jpeg" alt="Crystalized" loading="lazy">
+            <img src="assets/img/cr_result4.jpeg" alt="Crystalized" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- CASE: ARLIGENT -->
+    <!-- ========== ARLIGENT ========== -->
     <section class="case">
       <div class="container">
-        <div class="case__header fade-in">
-          <h2 class="case__brand">ARLIGENT</h2>
-          <div class="case__type">AI фотосессия на основе каталога бренда</div>
-        </div>
-        <p class="case__desc fade-in">
-          Фотосессия вдохновлена идеей "пути к себе" коллекции GO WILD и напоминает о нём.
-          Генерация трактует концепцию через двойничество, сумерки, бунт, искусство, выбор своего комфорта.
-        </p>
-
-        <div class="analysis fade-in">
-          <div class="analysis__image">
-            <img src="assets/img/ar_concept.jpeg" alt="ARLIGENT concept" loading="lazy">
+        <!-- Концепция -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">съёмка из каталога бренда</div>
+            <div class="case__section-type">концепция</div>
           </div>
-          <div class="analysis__text">
-            <h4>Концепция</h4>
-            <ul>
-              <li>Съёмка из каталога бренда как основа</li>
-              <li>Переосмысление через AI</li>
-              <li>Сохранение ДНК бренда</li>
-              <li>Новый визуальный контекст</li>
-            </ul>
+          <div class="analysis">
+            <div class="analysis__image">
+              <img src="assets/img/ar_catalog.jpeg" alt="Каталог ARLIGENT" loading="lazy">
+            </div>
+            <div class="analysis__text">
+              <p>Фотосессия вдохновлена идеей "пути к себе" коллекции GO WILD и кампейном к нему. Генерации трактуют концепцию через двойничество, сумерки, бунт, искусство, выбор своего комфорта.</p>
+            </div>
           </div>
         </div>
 
-        <div class="case__section-title fade-in">Результат</div>
-        <div class="gallery gallery--3 gallery--tall fade-in">
-          <img src="assets/img/ar_result1.jpeg" alt="ARLIGENT result" loading="lazy">
-          <img src="assets/img/ar_result2.jpeg" alt="ARLIGENT result" loading="lazy">
-          <img src="assets/img/ar_result3.jpeg" alt="ARLIGENT result" loading="lazy">
-        </div>
-        <div style="height: 4px"></div>
-        <div class="gallery gallery--3 gallery--short fade-in">
-          <img src="assets/img/ar_result5.jpeg" alt="ARLIGENT result" loading="lazy">
-          <img src="assets/img/ar_result6.jpeg" alt="ARLIGENT result" loading="lazy">
-          <img src="assets/img/ar_result4.jpeg" alt="ARLIGENT result" loading="lazy">
+        <!-- Результат -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">ai фотосессия на основе каталога бренда</div>
+            <div class="case__section-type"></div>
+          </div>
+          <div class="gallery gallery--3 gallery--tall">
+            <img src="assets/img/ar_result1.jpeg" alt="ARLIGENT" loading="lazy">
+            <img src="assets/img/ar_result2.jpeg" alt="ARLIGENT" loading="lazy">
+            <img src="assets/img/ar_result3.jpeg" alt="ARLIGENT" loading="lazy">
+          </div>
+          <div style="height: 4px"></div>
+          <div class="gallery gallery--3 gallery--short">
+            <img src="assets/img/ar_result5.jpeg" alt="ARLIGENT" loading="lazy">
+            <img src="assets/img/ar_result6.jpeg" alt="ARLIGENT" loading="lazy">
+            <img src="assets/img/ar_result4.jpeg" alt="ARLIGENT" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- OTHER PROJECTS -->
+    <!-- ========== ДРУГИЕ ПРОЕКТЫ И ВОЗМОЖНОСТИ ========== -->
     <section class="other-projects">
       <div class="container">
-        <h2 class="t-display fade-in">Другие проекты<br>и возможности</h2>
-        <p class="other-projects__subtitle fade-in">
-          AI фотосессия продукта, AI product ads, AI посты для соц сетей
-        </p>
-
-        <div class="case__section-title fade-in">AI фотосессия продукта</div>
-        <div class="gallery gallery--3 fade-in">
-          <img src="assets/img/ot_bag1.jpeg" alt="AI product shoot" loading="lazy">
-          <img src="assets/img/ot_bag3.jpeg" alt="AI product shoot" loading="lazy">
-          <img src="assets/img/ot_bag5.jpeg" alt="AI product shoot" loading="lazy">
-        </div>
-        <div style="height: 4px"></div>
-        <div class="gallery gallery--2 fade-in">
-          <img src="assets/img/ot_bag2.jpeg" alt="AI product shoot" loading="lazy">
-          <img src="assets/img/ot_bag4.jpeg" alt="AI product shoot" loading="lazy">
+        <h2 class="other-projects__title fade-in">Другие проекты<br>и возможности</h2>
+        <div class="other-projects__sub fade-in">
+          <span>ai фотосессия продукта</span>
+          <span>ai product ads</span>
+          <span>ai посты</span>
         </div>
 
-        <div class="case__section-title fade-in">AI product ads — премиум продуктовая съёмка</div>
-        <div class="gallery gallery--4 fade-in">
-          <img src="assets/img/ot_cosmetic1.jpeg" alt="AI cosmetics" loading="lazy">
-          <img src="assets/img/ot_cosmetic2.jpeg" alt="AI cosmetics" loading="lazy">
-          <img src="assets/img/ot_cosmetic3.jpeg" alt="AI cosmetics" loading="lazy">
-          <img src="assets/img/ot_cosmetic4.jpeg" alt="AI cosmetics" loading="lazy">
+        <!-- AI фотосессия продукта -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">ai фотосессия продукта</div>
+          </div>
+          <div class="gallery gallery--3 gallery--tall">
+            <img src="assets/img/ot_bag1.jpeg" alt="AI product" loading="lazy">
+            <img src="assets/img/ot_bag3.jpeg" alt="AI product" loading="lazy">
+            <img src="assets/img/ot_bag5.jpeg" alt="AI product" loading="lazy">
+          </div>
+          <div style="height: 4px"></div>
+          <div class="gallery gallery--2 gallery--medium">
+            <img src="assets/img/ot_bag2.jpeg" alt="AI product" loading="lazy">
+            <img src="assets/img/ot_bag4.jpeg" alt="AI product" loading="lazy">
+          </div>
+          <p class="case__desc" style="margin-top: 20px;">Особое внимание уделено деталям: сохранен в точности логотип бренда, текстуры поверхностей, шипы на ручке сумки.</p>
         </div>
 
-        <div class="case__section-title fade-in">AI контент для соц сетей</div>
-        <div class="gallery gallery--3 fade-in">
-          <img src="assets/img/ot_social1.jpeg" alt="Social media content" loading="lazy">
-          <img src="assets/img/ot_social3.jpeg" alt="Social media content" loading="lazy">
-          <img src="assets/img/ot_social5.jpeg" alt="Social media content" loading="lazy">
+        <!-- AI product ads -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">ai product ads - премиум продуктовая съёмка</div>
+          </div>
+          <div class="gallery gallery--4 gallery--medium">
+            <img src="assets/img/ot_cosmetic1.jpeg" alt="Cosmetics" loading="lazy">
+            <img src="assets/img/ot_cosmetic2.jpeg" alt="Cosmetics" loading="lazy">
+            <img src="assets/img/ot_cosmetic3.jpeg" alt="Cosmetics" loading="lazy">
+            <img src="assets/img/ot_cosmetic4.jpeg" alt="Cosmetics" loading="lazy">
+          </div>
+        </div>
+
+        <!-- AI контент для соц сетей -->
+        <div class="case__section fade-in">
+          <div class="case__section-header">
+            <div class="case__section-brand">ai контент для соц сетей - раскладка</div>
+          </div>
+          <div class="gallery gallery--3 gallery--medium">
+            <img src="assets/img/ot_social1.jpeg" alt="Social" loading="lazy">
+            <img src="assets/img/ot_social3.jpeg" alt="Social" loading="lazy">
+            <img src="assets/img/ot_social5.jpeg" alt="Social" loading="lazy">
+          </div>
         </div>
       </div>
     </section>
 
-  </div><!-- /portfolio -->
+  </div>
 
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <h2 class="contact__title fade-in">Давайте работать вместе</h2>
-      <p class="t-body fade-in" style="color: #666;">Свяжитесь со мной для обсуждения вашего проекта</p>
       <div class="contact__links fade-in">
-        <a href="https://t.me/" class="contact__link" target="_blank" rel="noopener">Telegram</a>
-        <a href="mailto:" class="contact__link">Email</a>
+        <a href="mailto:jjfrich@gmail.com" class="contact__link">jjfrich@gmail.com</a>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
-        <div class="footer__copy">&copy; 2025 Романова Ольга. AI Content Creator.</div>
+        <div class="footer__copy">&copy; 2025 Романова Ольга</div>
       </div>
     </div>
   </footer>
 
   <script>
-    // Mobile menu
     const burger = document.getElementById('burger');
     const mobileNav = document.getElementById('mobileNav');
-
     burger.addEventListener('click', () => {
       burger.classList.toggle('active');
       mobileNav.classList.toggle('active');
       document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
     });
+    mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      burger.classList.remove('active');
+      mobileNav.classList.remove('active');
+      document.body.style.overflow = '';
+    }));
 
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        burger.classList.remove('active');
-        mobileNav.classList.remove('active');
-        document.body.style.overflow = '';
-      });
-    });
-
-    // Hide nav on scroll down, show on scroll up
-    let lastScroll = 0;
+    let last = 0;
     const nav = document.getElementById('nav');
-
     window.addEventListener('scroll', () => {
-      const currentScroll = window.scrollY;
-      if (currentScroll > lastScroll && currentScroll > 100) {
-        nav.classList.add('nav--hidden');
-      } else {
-        nav.classList.remove('nav--hidden');
-      }
-      lastScroll = currentScroll;
+      const cur = window.scrollY;
+      nav.classList.toggle('nav--hidden', cur > last && cur > 80);
+      last = cur;
     }, { passive: true });
 
-    // Fade-in on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
   </script>
 </body>
 </html>
