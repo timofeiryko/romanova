@@ -110,7 +110,7 @@
           <p>изучение ЦА, текущих задач маркетинга, ДНК бренда</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step2.jpeg" alt="Концепция" loading="lazy"></div>
         <div class="process__step-text">
@@ -118,7 +118,7 @@
           <p>поиск референсов, подготовка мудбордов, музыки, согласование идей</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step4.jpeg" alt="Визуальный язык" loading="lazy"></div>
         <div class="process__step-text">
@@ -126,7 +126,7 @@
           <p>переработка референсов под ДНК бренда, дополнение визуала деталями и хуками</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step6.jpeg" alt="Ключевые кадры" loading="lazy"></div>
         <div class="process__step-text">
@@ -134,7 +134,7 @@
           <p>раскадровки, опорные кадры серии</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step8.jpeg" alt="Серийность" loading="lazy"></div>
         <div class="process__step-text">
@@ -142,7 +142,7 @@
           <p>новые ракурсы и позы, кадры для визуального разнообразия и динамики</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step9.jpeg" alt="Постобработка" loading="lazy"></div>
         <div class="process__step-text">
@@ -150,7 +150,7 @@
           <p>отбор кадров для публикации, обработка в PS, монтаж</p>
         </div>
       </div>
-
+      <div class="process__arrow">&#8595;</div>
       <div class="process__step fade-in">
         <div class="process__step-img"><img src="assets/img/home_step10.jpeg" alt="Результат" loading="lazy"></div>
         <div class="process__step-text">
@@ -529,13 +529,7 @@
       document.body.style.overflow = '';
     }));
 
-    let last = 0;
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => {
-      const cur = window.scrollY;
-      nav.classList.toggle('nav--hidden', cur > last && cur > 80);
-      last = cur;
-    }, { passive: true });
+    // Nav always visible (fixed)
 
     const obs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
